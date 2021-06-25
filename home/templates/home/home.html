@@ -1,0 +1,164 @@
+<!-- loading baisc html body -->
+{% extends "home/basic.html" %} {% load static%}
+<!-- setting page title -->
+{% block title %} HOME {% endblock title %}
+
+<!-- for links -->
+{% block links %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> {% endblock links%}
+
+<!-- creating perticulaR PAGE BODY -->
+{% block body %}
+<div class="block">
+    <div class="block-1">
+        <h4>Abhi Traders</h4>
+        <h1 class="ml3">AN ESSENTIAL ASPECT OF CREATIVITY IS NOT AFRAID TO FAIL</h1>
+
+    </div>
+    <div class="block-2">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'home/photos/digitalM.gif'%}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black;">Digital Marketing</h5>
+                        <p>Any marketing that uses electronic devices to convey promotional messaging and measure its impact. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'home/photos/seo.gif'%}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black;">Google SEO</h5>
+                        <p>SEO is the art and science of persuading search engines such as Google, Bing, and Yahoo, to recommend your content to their users as the best solution to their problem. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'home/photos/social.jpg'%}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black;">Socila media pramotion's</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- /// services/////////// -->
+<div class="about">
+    <div class="about-matter">
+        <h3>Abhi Traders</h3>
+        <h2>About Us </h2>
+        <p style="font-family: inherit;">Abhi Traders is a Professional Website Design Company in Ferozepur . We offer a complete range of Website Design and Development, includes Corporate Web Site ,Digital Marketing, SEO, Banners Designing and Search Engine Optimization. We have extended
+            our hands across the globe in providing the World Class solutions to the clients in Web Designing and Development.
+            <br><br> Amongest many competitors in the field of Web Designing and Development Abhi Traders strives hard to excel well in its project. Most of our clients have been with us for years and keep coming back for more. We are very proud of being
+            a customer's-oriented design company, and we nurture all our business relationships with great care and love.
+        </p>
+        <a href="{% url 'about_us'%}"><img src="{%static 'home/photos/know.png'%}" alt="know more" class="Android_konw_more"></a>
+    </div>
+    <div class="uncle-pannel">
+        <img src="{% static 'home/photos/uncleji.png'%}" alt="">
+    </div>
+    <!-- <div class="about-services">
+        <img src="{% static 'home/photos/services.png'%}" alt="Our Services" class="services">
+        <div class="services-items">
+            <span style="width: 40%; text-align: center; margin-left: 8%;">
+                <img src="{%static 'home/photos/account.png'%}" alt="#" class="item-1">
+                <br>
+                <a href="#">Account opening</a>
+            </span>
+            <span style="width: 40%; text-align: center; margin-left: 8%;">
+                <img src="{%static 'home/photos/manage.png'%}" alt="#" class="item-1">
+                <br>
+                <a href="#">Account manage</a>
+            </span>
+            <span style="width: 40%; text-align: center; margin-left: 8%;">
+                <img src="{%static 'home/photos/socialmedia.png'%}" alt="#" class="item-1">
+                <br>
+                <a href="#">Social media pramotion's</a>
+            </span>
+            <span style="width: 40%; text-align: center; margin-left: 8%;">
+                <img src="{%static 'home/photos/website.png'%}" alt="#" class="item-1">
+                <br>
+                <a href="#">Website making</a>
+            </span>
+            <span style="width: 40%; text-align: center; margin-left: 34%;">
+                <img src="{%static 'home/photos/logo.png'%}" alt="#" class="item-1">
+                <br>
+                <a href="#">logo making</a>
+            </span>
+        </div>
+
+    </div> -->
+
+</div>
+
+<div class="service-pannel">
+    <div>
+        <h1>Our services</h1>
+    </div>
+    <span class="pannel-item ">
+
+        <div id="ser-1" class="service-pannel-items">
+            <img src="{% static 'home/photos/rect.png'%}" style="height: 10%;" alt="service Photo logo">
+            <h2>WEB DESIGN</h2>
+            <p>
+                Website Designing covers many different skills and disciplines that are used for developing a website.
+                The different areas of website designing include; web graphic design, interface logo design, Brochures &
+                catalogs</p>
+            <a href="{% url 'devlopment'%}"><button type="button" class="btn btn-outline-success tans-button">Know more</button></a>
+        </div>
+        <div id="ser-2" class="service-pannel-items">
+            <img src="{% static 'home/photos/rect.png'%}" style="height: 10%;" alt="service Photo logo">
+            <h2>SEO</h2>
+            <p>
+                SEO stands for search engine optimization. It is technique which is used by the most webmasters and best
+                SEO Companies in India to increase the visibility of website in the major search engines ( Google, Bing,
+                Yahoo, Yandex) etc.</p>
+            <a href="{% url 'SEO'%}"><button type="button" class="btn btn-outline-success tans-button">Know more</button></a>
+        </div>
+        <div id="ser-3" class="service-pannel-items">
+            <img src="{% static 'home/photos/rect.png'%}" style="height: 10%;" alt="service Photo logo">
+            <h2>FACEBOOK PROMOTIONS</h2>
+            <p>For over 8 years, hundreds of businesses across the nation have selected us as their go-to Facebook
+                Marketing Company. Our Facebook marketing services help businesses like yours increase awareness.</p>
+            <a href="{% url 'facebook'%}"><button type="button" class="btn btn-outline-success tans-button">Know more</button></a>
+        </div>
+        <div id="ser-4" class="service-pannel-items">
+            <img src="{% static 'home/photos/rect.png'%}" style="height: 10%;" alt="service Photo logo">
+            <h2>YOUTUBE PROMOTIONS</h2>
+            <p>Looking to launch your product / service promotion campaigns via YouTube? We will help. Our YouTube
+                marketing experts create varied range of videos as per your business vertical and needs.</p>
+            <a href="{% url 'youtube'%}"><button type="button" class="btn btn-outline-success tans-button">Know more</button></a>
+        </div>
+        <div id="ser-5" class="service-pannel-items">
+            <img src="{% static 'home/photos/rect.png'%}" style="height: 10%;" alt="service Photo logo">
+            <h2>INSTAGRAM PROMOTIONS</h2>
+            <p>An Abhi Tradersis an agency that helps businesses create and manage Instagram advertising campaigns. The
+                benefits of hiring an Abhi Tradersagency generally consists of the added experience.</p>
+            <a href="{% url 'insta'%}"><button type="button" class="btn btn-outline-success tans-button">Know more</button></a>
+        </div>
+        </spna>
+</div>
+{% endblock body %} {% block script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+    var textWrapper = document.querySelector('.ml3');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); anime.timeline({ loop: true }).add({ targets: '.ml3 .letter', opacity: [0, 1], easing: "easeInOutQuad", duration: 2250, delay: (el, i) => 150 * (i
+    + 1) }).add({ targets: '.ml3', opacity: 0, duration: 1000, easing: "easeOutExpo", delay: 1000 });
+    </script>
+    {% endblock script %}

@@ -1,0 +1,55 @@
+<!-- loading baisc html body -->
+{% extends "home/basic.html" %} {% load static%}
+<!-- setting page title -->
+{% block title %} Digital Marketing {% endblock title %}
+
+<!-- for links -->
+{% block links %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> {% endblock links%}
+
+<!-- creating perticulaR PAGE BODY -->
+{% block body %}
+<div class="market_pannel">
+
+    <h1>Digital Marketing</h1>
+</div>
+<div class="market-p1 container">
+    <div class="p1_1">
+
+    </div>
+    <div class="p1_2">
+        <h3>Abhi Traders</h3>
+        <h5>------- Services ---------</h5>
+        <ul>
+            <a href="#">Digital Marketing</a> <br>
+            <a href="{% url 'SEO'%}">SEO</a> <br>
+            <a href="{% url 'devlopment'%}">Web Devlopment</a> <br>
+            <a href="{% url 'facebook'%}">Facebook Promotion</a> <br>
+            <a href="{% url 'insta'%}">Instagram Promotion</a> <br>
+            <a href="{% url 'youtube'%}">YouTube Promotion</a> <br>
+            <a href="#">Digital Logo</a> <br>
+        </ul>
+    </div>
+</div>
+<div class="market_content container">
+    <h2>DIGITAL MARKETING</h2>
+    <p>We are a team of highly skilled and ambitious professionals and We Work to Deliver. We are a B2B lead generation company, We can help you Get More Business with strategic planning & innovative ideas combined with our technical know-how. Depending
+        on your business model, we have the tailor-made solution for you.
+        <br> <br> <br> The term Digital marketing in itself covers vast areas of digital platforms. It contains various forms of methods to market your products via a digital medium. This digital medium can be the internet, your phones, or any N number
+        of such tools.
+        <br> <br> <br> The development of digital marketing has changed the way brands and businesses interact with their customers and have revolutionized the way brands use digital media and technology for marketing. The significance of Digital marketing
+        has increased dramatically over the past few decades. This is because of the fact that less people now are willing to visit physical shops, and would rather use their phones or computers for such needs. It gives more freedom and is more convenient.
+        Digital marketing platforms are now a part of our lives, we use them for social interactions, to get our daily news, to get our entertainment. This not only helps us in so many ways but it also makes it easy for brands to market their products
+        more efficiently and effectively.</p>
+    <br>
+    <h2>Benefits of Digital Marketing Services</h2>
+    <br>
+    <p>Now that we know what is digital marketing, lets understand what are the most common and at the same time most important strategies all businesses should regularly and consistently focus on regardless of your industry.</p>
+    <br>
+    <p style="display: list-item;">Search Engine Optimization.</p>
+    <p style="display: list-item;">Search Engine Marketing.</p>
+    <p style="display: list-item;">Social Media Marketing.</p>
+    <p style="display: list-item;">Email Marketing.</p>
+</div>
+{% endblock body %}

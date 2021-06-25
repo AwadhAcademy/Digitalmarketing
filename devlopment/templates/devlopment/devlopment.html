@@ -1,0 +1,46 @@
+<!-- loading baisc html body -->
+{% extends "home/basic.html" %} {% load static%}
+<!-- setting page title -->
+{% block title %} Web Devlopment {% endblock title %}
+
+<!-- for links -->
+{% block links %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> {% endblock links%}
+
+<!-- creating perticulaR PAGE BODY -->
+{% block body %}
+<div class="SEO_pannel">
+
+    <h1>WEB DEVLOPMENT</h1>
+</div>
+<div class="market-p1 container">
+    <div class="p1_1devlopment">
+
+    </div>
+    <div class="p1_2">
+        <h3>Abhi Traders</h3>
+        <h5>------- Services ---------</h5>
+        <ul>
+            <a href="#">Digital Marketing</a> <br>
+            <a href="{% url 'SEO'%}">SEO</a> <br>
+            <a href="{% url 'devlopment'%}">Web Devlopment</a> <br>
+            <a href="{% url 'facebook'%}">Facebook Promotion</a> <br>
+            <a href="{% url 'insta'%}">Instagram Promotion</a> <br>
+            <a href="{% url 'youtube'%}">YouTube Promotion</a> <br>
+            <a href="#">Digital Logo</a> <br>
+        </ul>
+    </div>
+</div>
+<div class="market_content container">
+    <h2>Website Designing</h2>
+    <p>Website Designing covers many different skills and disciplines that are used for developing a website. The different areas of website designing include; web graphic design, interface logo design, Brochures and catalogs, user experience design and
+        Search Engine Optimization. The term website designing is normally used to describe the design process relating to the front-end design of a website including writing mark up, but this is a grey area as this is also covered by Web Development.
+        <br><br><br> Our Multi talented designers always deliver effective web design and development. Our web designers are on toes on the latest techniques and tools which will enlighten your site. We develop websites which are not only informatics
+        but also the due cause to increase the business of your concern.
+        <br><br> Web Designing in impressive way is not just a profession but passion for our Company. We believe in the idea that good looking of any website is first impression on visitors. Good design of any website is the starting point of any website.
+        We have special team for Website Design who has been involved in designing professional websites of all categories. Our websites and search engines optimized and user friendly.
+        <br> Connecting creative, technology and commerce to drive brands and business growth. We have been recognized and awarded for our exceptional & excellent work. We work for results & awards provide us motivation.
+    </p>
+</div>
+{% endblock body %}

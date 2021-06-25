@@ -1,0 +1,43 @@
+<!-- loading baisc html body -->
+{% extends "home/basic.html" %} {% load static%}
+<!-- setting page title -->
+{% block title %} Instagram Devlopment {% endblock title %}
+
+<!-- for links -->
+{% block links %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> {% endblock links%}
+
+<!-- creating perticulaR PAGE BODY -->
+{% block body %}
+<div class="SEO_pannel">
+
+    <h1>INSTAGRAM DEVLOPMENT</h1>
+</div>
+<div class="market-p1 container">
+    <div class="p1_1insta">
+
+    </div>
+    <div class="p1_2">
+        <h3>Abhi Traders</h3>
+        <h5>------- Services ---------</h5>
+        <ul>
+            <a href="#">Digital Marketing</a> <br>
+            <a href="{% url 'SEO'%}">SEO</a> <br>
+            <a href="{% url 'devlopment'%}">Web Devlopment</a> <br>
+            <a href="{% url 'facebook'%}">Facebook Promotion</a> <br>
+            <a href="{% url 'insta'%}">Instagram Promotion</a> <br>
+            <a href="{% url 'youtube'%}">YouTube Promotion</a> <br>
+            <a href="#">Digital Logo</a> <br>
+        </ul>
+    </div>
+</div>
+<div class="market_content container">
+    <h2>INSTAGRAM PROMOTIONS</h2>
+    <p>An Abhi Tradersis an agency that helps businesses create and manage Instagram advertising campaigns. The benefits of hiring an Abhi Tradersagency generally consists of the added experience and knowledge that they will bring to your business to make
+        your campaign successful. Another major benefit is that an Abhi Tradersagency can save you a lot of time that you would typically spend trying to figure out how to use Instagram ads effectively on your own.
+        <br><br> The truth is that there are businesses that are driving high volumes of sales through Instagram advertising. The costs associated with advertising through Instagram is much lower than most alternative forms of advertising. And at the
+        same time, it has proven to be more effective than other forms of advertising that exists. Throughout our clientele, we have found Instagram to have higher levels of engagement than any other social media platform.
+    </p>
+</div>
+{% endblock body %}

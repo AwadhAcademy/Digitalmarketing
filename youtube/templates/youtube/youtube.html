@@ -1,0 +1,66 @@
+<!-- loading baisc html body -->
+{% extends "home/basic.html" %} {% load static%}
+<!-- setting page title -->
+{% block title %} YOUTUBE PROMOTIONS {% endblock title %}
+
+<!-- for links -->
+{% block links %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> {% endblock links%}
+
+<!-- creating perticulaR PAGE BODY -->
+{% block body %}
+<div class="SEO_pannel">
+
+    <h1>YOUTUBE PROMOTIONS</h1>
+</div>
+<div class="market-p1 container">
+    <div class="p1_1youtube">
+
+    </div>
+    <div class="p1_2">
+        <h3>Abhi Traders</h3>
+        <h5>------- Services ---------</h5>
+        <ul>
+            <a href="#">Digital Marketing</a> <br>
+            <a href="{% url 'SEO'%}">SEO</a> <br>
+            <a href="{% url 'devlopment'%}">Web Devlopment</a> <br>
+            <a href="{% url 'facebook'%}">Facebook Promotion</a> <br>
+            <a href="{% url 'insta'%}">Instagram Promotion</a> <br>
+            <a href="{% url 'youtube'%}">YouTube Promotion</a> <br>
+            <a href="#">Digital Logo</a> <br>
+        </ul>
+    </div>
+</div>
+<div class="market_content container">
+    <h2>YOUTUBE PROMOTIONS
+    </h2>
+    <p>Looking to launch your product / service promotion campaigns via YouTube? We will help. Our YouTube marketing experts create varied range of videos as per your business vertical and needs. These videos are then promoted and distributed through varies
+        digital marketing channels. Our definite YouTube marketing campaign strategies create a buzz about your brand and successfully market it on YouTube and via other social media marketing channels.
+    </p>
+    <h3>Following are the varied range of videos that we create for our clients on-demand:</h3>
+    <br><br>
+    <p style="display: list-item;">Promotional videos</p>
+    <p style="display: list-item;">Presentation Videos</p>
+    <p style="display: list-item;">Product Launch Videos</p>
+    <p style="display: list-item;">User Guide Videos</p>
+    <p style="display: list-item;">Training Videos</p>
+    <br>
+    <h2>YouTube Video Marketing Process:</h2>
+    <h3>1. YouTube Video Creation:</h3>
+    <p>We start the campaign by creating relevant and persuasive videos to be published on your YouTube channel.Our experts create videos based on the digital content that the client provides us.The videos we create are of HD quality and scripted by experienced
+        youtube script writers. We also have our own team of voice over artists to give playback voice in the videos when need arises. These videos include relevant pictures of your product/service/website and royalty free music. After delivery, you can
+        ask us for any edits that you require.
+    </p>
+    <h3>2. YouTube Video Optimization:</h3>
+    <p>All the videos we create during the campaign are fully optimized as per search engine standards specially Google. We also perform optimization for other search engines when requested to do so. Our video SEO experts team optimizes videos using keyword
+        rich video titles, video descriptions, video tags and video subtitles. They also take care of Logo, Social Icons, Color Background and profile information during campaign optimization.</p>
+    <h3>3. YouTube Video Syndication:</h3>
+    <p>The intent of our YouTube marketing services is to help you in expanding your user base. Our YouTube video syndication services promotes your optimized videos on social networking and social bookmarking sites, podcast sites, article sites and blogging
+        sites. These are the platforms where your targeted buyers could be find searching engaging content like yours. Our YouTube syndication brings direct benefits to the business-</p>
+    <br>
+    <p style="display: list-item;"> It increases the number of your viewing audience</p>
+    <p style="display: list-item;"> It drives more advertising revenue</p>
+    <p style="display: list-item;">It leverages social media to increase video views and brand awareness</p>
+</div>
+{% endblock body %}

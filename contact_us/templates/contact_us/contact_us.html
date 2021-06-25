@@ -1,0 +1,76 @@
+<!-- loading baisc html body -->
+{% extends "home/basic.html" %} {% load static%}
+<!-- setting page title -->
+{% block title %} Contact Us {% endblock title %}
+
+<!-- for links -->
+{% block links %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"> {% endblock links%}
+
+<!-- creating perticulaR PAGE BODY -->
+{% block body %}
+<div class="market_pannel">
+
+    <h1>Contact-us</h1>
+</div>
+<div class="upper_contact_data container">
+    <img src="{% static 'home/photos/getintouch.png'%}" alt="">
+    <h2>Contact Us</h2>
+</div>
+<div class="contact_details_pannel">
+    <div class="contact1"> <img src="{% static 'home/photos/rect.png'%}" alt="not lode">
+        <h2> +91-8360-0833-60</h2>
+        <h2>+91-9646-0404-85</h2>
+    </div>
+    <div class="contact1"> <img src="{% static 'home/photos/rect.png'%}" alt="not lode">
+        <h2>abhitrader2000@gemail.com</h2>
+    </div>
+    <div class="contact1"> <img src="{% static 'home/photos/rect.png'%}" alt="not lode">
+        <h2>H.B. Colony. Building No. 252 Ferozepur (Punjab) near puda office. India.</h2>
+    </div>
+</div>
+
+<!-- ////////////////////////// Form DATA ///////////////////////  -->
+<div class="container">
+
+    <form class="row g-3" method="POST" action="/contact_us">
+        {% csrf_token %}
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Name" id="name" name="name">
+        </div>
+        <div class="col-md-6">
+            <label for="site" class="form-label">Web site</label>
+            <input type="text" class="form-control" placeholder="www.abc.com" id="site" name="site">
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Eemail</label>
+            <input type="email" class="form-control" placeholder="abc@gmail.com" id="email" name="email">
+        </div>
+        <div class="col-md-6">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+            <label for="text" class="form-label">Messsage</label>
+            <textarea class="form-control" placeholder="Messsage" id="text" name="text" rows="3"></textarea>
+        </div>
+        <div class="col-md-6">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="phone" placeholder="Phone" name="phone">
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+`{% endblock body %}
